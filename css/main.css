@@ -3601,3 +3601,138 @@ footer .row {
 
 
 /*# sourceMappingURL=main.css.map */
+
+/* -------------------------------------------------------------------
+ * responsive:
+ * timeline
+ * ------------------------------------------------------------------- */
+ /* * {
+   border: 0;
+   margin: 0;
+   padding: 0;
+ }
+
+ html {
+   height: 100%;
+ }
+
+ body {
+   height: inherit;
+   display: flex;
+   flex-direction: column;
+   font-family: "Fira Sans", sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   color: #79838c;
+ }
+  */
+ div.timelinebody {
+   display: flex;
+   flex: auto;
+   flex-direction: column;
+   max-height: 100%;
+ }
+
+ #timeline {
+   position: relative;
+   display: table;
+   height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0.5rem;
+ }
+ #timeline div:after {
+   content: "";
+   width: 2px;
+   position: absolute;
+   top: 0.5rem;
+   bottom: 0rem;
+   left: 60px;
+   z-index: 1;
+   background: #c5c5c5;
+ }
+ #timeline h3 {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 5rem;
+   letter-spacing: 4px;
+   color: rgba(0, 0, 0, 0.1);
+   margin: 0;
+   font-size: 5em;
+   font-weight: 800;
+ }
+ @media (min-width: 62em) {
+   #timeline h3 {
+     font-size: 3em;
+   }
+ }
+ #timeline section {
+   position: relative;
+   padding-bottom: 1.5em;
+   margin-bottom: 4em;
+ }
+ #timeline section h4 {
+   position: absolute;
+   bottom: 0;
+   font-size: 0.6em;
+   font-weight: 800;
+   letter-spacing: 2px;
+   line-height: 1.2em;
+   margin: 0;
+   padding: 0 0 0 89px;
+   text-transform: uppercase;
+   color: rgba(255,130,130,1);
+ }
+ @media (min-width: 62em) {
+   #timeline section h4 {
+     font-size: 0.5em;
+   }
+ }
+ #timeline section ul {
+   list-style-type: none;
+   padding: 0 0 0 75px;
+   margin: -1.35rem 0 1em;
+   max-width: 32rem;
+   font-size: 1em;
+ }
+ @media (min-width: 62em) {
+   #timeline section ul {
+     font-size: 1.1em;
+     padding: 0 0 0 81px;
+   }
+ }
+ #timeline section ul:last-child {
+   margin-bottom: 0;
+ }
+ #timeline section ul:first-of-type:after {
+   content: "";
+   width: 14px;
+   height: 14px;
+   background: #c5c5c5;
+   border: 2px solid #ffffff;
+   -webkit-border-radius: 0%;
+   -moz-border-radius: 0%;
+   -ms-border-radius: 0%;
+   border-radius: 0%;
+   position: absolute;
+   left: 54px;
+   top: 3px;
+   z-index: 2;
+ }
+ #timeline section ul li {
+   margin-left: 0.5rem;
+ }
+ #timeline section ul li:before {
+   content: "";
+   margin-left: -0.5rem;
+   padding-right: 0.3rem;
+ }
+ #timeline section ul li:not(:first-child) {
+   margin-top: 0.4rem;
+ }
+
+ svg {
+   border: 3px solid white;
+   border-radius: 50%;
+   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+ }
