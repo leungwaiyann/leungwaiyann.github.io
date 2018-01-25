@@ -1,5 +1,6 @@
 /* ===================================================================
- *
+ *  Red: #b43a53
+ *  original green: #39b54a
  *  ------------------------------------------------------------------
  *
  *  TOC:
@@ -88,13 +89,13 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-    color: #0087cc;
+    color: #ffffff;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 a:hover, a:focus, a:active {
-    color: #39b54a;
+    color: #666666;
 }
 
 a:hover, a:active {
@@ -543,7 +544,7 @@ form,
 }
 
 .line-scale-pulse-out > div {
-    background-color: #39b54a;
+    background-color: #39b54a;        //Neon light here for loading bar
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -1418,7 +1419,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .slick-slider .slick-dots li.slick-active button,
 .slick-slider .slick-dots li:hover button {
-    background: #39b54a;
+    background: #FF0000;
 }
 
 
@@ -1511,7 +1512,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     letter-spacing: .25rem;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
-    color: #39b54a;
+    color: #b43a53;
 }
 
 .header-nav p {
@@ -1649,7 +1650,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #39b54a;
+    color: #888888;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
