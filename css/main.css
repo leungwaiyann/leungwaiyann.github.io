@@ -1,7 +1,5 @@
 /* ===================================================================
  *
- *  Glint v1.0 Main Stylesheet
- *  11-20-2017
  *  ------------------------------------------------------------------
  *
  *  TOC:
@@ -1740,6 +1738,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * # home
  *
  * ------------------------------------------------------------------- */
+
+ /* Style the video: 100% width and height to cover the entire window */
+ #myVideo {
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 180%;
+     min-height: 100%;
+ }
+
 .s-home {
     width: 100%;
     height: 100%;
@@ -1768,13 +1776,15 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .6;
+    opacity: .3;
     background-color: #000000;
 }
 
 .no-js .s-home {
     background: #000000;
 }
+
+
 
 
 /* -------------------------------------------------------------------
