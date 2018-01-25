@@ -3721,10 +3721,10 @@ footer .row {
    height: 14px;
    background: #c5c5c5;
    border: 2px solid #ffffff;
-   -webkit-border-radius: 0%;
-   -moz-border-radius: 0%;
-   -ms-border-radius: 0%;
-   border-radius: 0%;
+   -webkit-border-radius: 100%;
+   -moz-border-radius: 100%;
+   -ms-border-radius: 100%;
+   border-radius: 100%;
    position: absolute;
    left: 54px;
    top: 3px;
