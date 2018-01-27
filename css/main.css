@@ -1245,7 +1245,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    color: #39b54a;
+    color: #830303;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -1471,6 +1471,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .header-nav {
     background: #0C0C0C;
+    opacity: 0.90;
     color: rgba(255, 255, 255, 0.25);
     font-family: "montserrat-light", sans-serif;
     font-size: 1.3rem;
@@ -1801,12 +1802,25 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     overflow: hidden;
 }
 
+
 .home-content h3 {
     font-family: "montserrat-medium", sans-serif;
     font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
     letter-spacing: .3rem;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    margin-left: 6px;
+}
+
+.home-content h2 {
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 2.6rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: .5rem;
     position: relative;
     margin-top: 0;
     margin-bottom: 1.2rem;
@@ -1870,8 +1884,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__scroll a::before {
-    border-bottom: 2px solid #39b54a;
-    border-right: 2px solid #39b54a;
+    border-bottom: 2px solid #830303;
+    border-right: 2px solid #830303;
     content: '';
     display: block;
     height: 8px;
@@ -1895,7 +1909,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #39b54a;
+    background-color: #830303;
     position: absolute;
     right: 7.2rem;
     bottom: 0;
@@ -2211,7 +2225,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
+    background-color: #570303;
     color: #010507;
     position: relative;
 }
@@ -3733,6 +3747,11 @@ footer .row {
  #timeline section ul li {
    margin-left: 0.5rem;
  }
+
+ /* #timeline section ul li a{
+   color: #rgb(204, 160, 160);
+ } */
+
  #timeline section ul li:before {
    content: "";
    margin-left: -0.5rem;
@@ -3741,6 +3760,7 @@ footer .row {
  #timeline section ul li:not(:first-child) {
    margin-top: 0.4rem;
  }
+
 
  svg {
    border: 3px solid white;
