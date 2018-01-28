@@ -1251,7 +1251,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .subhead--dark {
-    color: #000000;
+    color: #fcffc7;
 }
 
 
@@ -3490,6 +3490,7 @@ footer .row {
  * ## footer bottom
  * --------------------------------------------------------------- */
 .footer-bottom {
+    /* background-color: #rgb(0, 0, 0); */
     margin-top: 5.4rem;
     text-align: center;
     font-size: 14px;
