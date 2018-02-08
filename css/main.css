@@ -1622,6 +1622,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-overflow-scrolling: touch;
 }
 
+.menu-is-open .header-menu-toggle {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
 .menu-is-open .header-nav .header-nav__content {
     opacity: 1;
     visibility: visible;
@@ -1655,6 +1663,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
+
+
 
 .header-menu-toggle.opaque {
     background-color: #000000;
