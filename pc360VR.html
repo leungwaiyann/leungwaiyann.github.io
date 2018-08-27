@@ -1,6 +1,10 @@
 <html>
 
 <head>
+  <!--
+  3D cude and animation ref: https://github.com/aframevr/aframe/blob/master/docs/guides/building-a-basic-scene.md
+  -->
+
   <!--- basic page needs
     ================================================== -->
   <meta charset="utf-8">
@@ -32,7 +36,7 @@
       <img id="03" crossorigin="anonymous" src="360VR_image/360_03.jpg">
       <img id="02" crossorigin="anonymous" src="360VR_image/360_02.jpg">
       <img id="01" crossorigin="anonymous" src="360VR_image/360_01.jpg">
-      
+
       <!-- Image link template to be reused. -->
       <script id="link" type="text/html">
         <a-entity class="link" geometry="primitive: plane; height: 1; width: 1" material="shader: flat; src: ${thumb}" event-set__1="_event: mousedown; scale: 1 1 1" event-set__2="_event: mouseup; scale: 1.2 1.2 1" event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
@@ -56,8 +60,11 @@
 
     <a-box id="links" src="360VR_image/thumb_00.png" layout="type: line; margin:1.2" position="-2 1 -4" rotation="0 45 0" scale="1 1 1">
       <a-box src="360VR_image/thumb_00.png" template="src: #link" data-src="#03" data-thumb="#03-thumb"></a-box>
+      <a-animation attribute="position" to="-2 0.5 -4" direction="alternate" dur="3000"
+      repeat="indefinite"></a-animation>
       <a-box src="360VR_image/thumb_01.png" template="src: #link" data-src="#01" data-thumb="#01-thumb"></a-box>
     </a-box>
+
 
     <a-entity id="links" layout="type: line; margin: 1.1" position="0 -1 -4">
       <a-entity template="src: #link" data-src="#03" data-thumb="#03-thumb"></a-entity>
