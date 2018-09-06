@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <!--
+  3D cude and animation ref: https://github.com/aframevr/aframe/blob/master/docs/guides/building-a-basic-scene.md
+  -->
+
+  <!--- basic page needs
+    ================================================== -->
+  <meta charset="utf-8">
+  <title>LEUNG's</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <!-- <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script> -->
+  <!-- <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+  <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+  <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+  <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+  <script src="components/set-image.js"></script> -->
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+  <!-- icons
+    ================================================== -->
+  <link rel="shortcut icon" href="pc.ico" type="image/x-icon">
+  <link rel="icon" href="pc.ico" type="image/x-icon">
+</head>
+
+<body>
+  <a-scene embedded arjs='sourceType: webcam;'>
+		<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+</body>
+
+</html>
