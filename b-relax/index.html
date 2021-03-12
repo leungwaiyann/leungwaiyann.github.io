@@ -15,7 +15,7 @@
 <body id="t" class="offline">
     <div id="messageBox" class="sendmessage">
         <!-- <h1 style="text-align: center;font-family: 'Open Sans', sans-serif;">Press Space to start</h1> -->
-        <h1 style="text-align: center;font-family: 'Press Start 2P', cursive; padding-top: 20px;" id="myP">Press Space to start2</h1>
+        <h1 style="text-align: center;font-family: 'Press Start 2P', cursive; padding-top: 20px;" id="myP">Press Space to start3</h1>
         <div class="niokbutton" onclick="okbuttonsend()"></div>
     </div>
     <div id="main-frame-error" class="interstitial-wrapper">
@@ -43,13 +43,11 @@
     }
 };
     
-    document.getElementById("myP").ontouchstart = function(evt) {
-    evt = evt || window.event;
+document.getElementById("myP").ontouchstart = myFunction;
 
-        var box = document.getElementById("messageBox");
-        box.style.visibility="hidden";
-    
-};
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
 </script>
     
 </html>
